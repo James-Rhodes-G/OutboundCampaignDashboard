@@ -1,0 +1,12 @@
+{
+    "name": "QuinStreet_Complete",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "QuinStreet_Complete.json",
+            "credentialsFile": "QuinStreet_Complete_cred.json"
+        }
+    }
+}
