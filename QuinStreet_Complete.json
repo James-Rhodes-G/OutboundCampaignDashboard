@@ -1,1 +1,1735 @@
-[]
+[
+    {
+        "id": "97b23d8cf4e6a4a6",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b947d8abbaee7b36",
+        "type": "tab",
+        "label": "Data Ingestion",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "08295287843d4686",
+        "type": "tab",
+        "label": "Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c72bf6317254e4fa",
+        "type": "ui-base",
+        "name": "QuinnStreet Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "eae335781ea9201c",
+        "type": "ui-theme",
+        "name": "QuinnStreet Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "5f50a2e902164da8",
+        "type": "ui-page",
+        "name": "Overview",
+        "ui": "c72bf6317254e4fa",
+        "path": "/overview",
+        "icon": "home",
+        "layout": "tabs",
+        "theme": "eae335781ea9201c",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "a9e9dcc950f349e6",
+        "type": "ui-page",
+        "name": "Latency Analysis",
+        "ui": "c72bf6317254e4fa",
+        "path": "/latency-analysis",
+        "icon": "timeline",
+        "layout": "tabs",
+        "theme": "eae335781ea9201c",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "a0822a855ecc4530",
+        "type": "ui-page",
+        "name": "Routing Analysis",
+        "ui": "c72bf6317254e4fa",
+        "path": "/routing-analysis",
+        "icon": "route",
+        "layout": "tabs",
+        "theme": "eae335781ea9201c",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "83700ccc9e2d4aff",
+        "type": "ui-page",
+        "name": "Time Analysis",
+        "ui": "c72bf6317254e4fa",
+        "path": "/time-analysis",
+        "icon": "schedule",
+        "layout": "tabs",
+        "theme": "eae335781ea9201c",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "39098fb4fc23470b",
+        "type": "ui-page",
+        "name": "Root Cause Analysis",
+        "ui": "c72bf6317254e4fa",
+        "path": "/root-cause-analysis",
+        "icon": "report",
+        "layout": "tabs",
+        "theme": "eae335781ea9201c",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 5,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "9ec4eaf4dc4b42f3",
+        "type": "ui-page",
+        "name": "Conversation Explorer",
+        "ui": "c72bf6317254e4fa",
+        "path": "/conversation-explorer",
+        "icon": "search",
+        "layout": "tabs",
+        "theme": "eae335781ea9201c",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 6,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "c234966c983c48c6",
+        "type": "ui-page",
+        "name": "Data Quality",
+        "ui": "c72bf6317254e4fa",
+        "path": "/data-quality",
+        "icon": "fact_check",
+        "layout": "tabs",
+        "theme": "eae335781ea9201c",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 7,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "c5481991f6af4ecd",
+        "type": "ui-group",
+        "name": "KPIs",
+        "page": "5f50a2e902164da8",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "e372846a44524261",
+        "type": "ui-group",
+        "name": "Disposition Summary",
+        "page": "5f50a2e902164da8",
+        "width": 12,
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "30202612dbe14ccd",
+        "type": "ui-group",
+        "name": "Latency Summary",
+        "page": "5f50a2e902164da8",
+        "width": 12,
+        "height": 1,
+        "order": 3,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "808456afcd4a499c",
+        "type": "ui-group",
+        "name": "Slowest Calls",
+        "page": "a9e9dcc950f349e6",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "702cf7f178ab43bc",
+        "type": "ui-group",
+        "name": "Delay Bands",
+        "page": "a9e9dcc950f349e6",
+        "width": 12,
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "6b9287a0ef984eff",
+        "type": "ui-group",
+        "name": "Outliers",
+        "page": "a9e9dcc950f349e6",
+        "width": 12,
+        "height": 1,
+        "order": 3,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "6a4deb54ccb74d50",
+        "type": "ui-group",
+        "name": "Stage Summary",
+        "page": "a0822a855ecc4530",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "ea6d0575c607488f",
+        "type": "ui-group",
+        "name": "Source Summary",
+        "page": "a0822a855ecc4530",
+        "width": 12,
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "32416563412a4627",
+        "type": "ui-group",
+        "name": "Hourly",
+        "page": "83700ccc9e2d4aff",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "fcb0ba83b7e64f5e",
+        "type": "ui-group",
+        "name": "Weekday",
+        "page": "83700ccc9e2d4aff",
+        "width": 12,
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1596bd27f68e4671",
+        "type": "ui-group",
+        "name": "Date Trend",
+        "page": "83700ccc9e2d4aff",
+        "width": 12,
+        "height": 1,
+        "order": 3,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "4e644d6d4cc546b4",
+        "type": "ui-group",
+        "name": "Dominant Stage",
+        "page": "39098fb4fc23470b",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "4e19e8a73aff49d4",
+        "type": "ui-group",
+        "name": "Worst Calls",
+        "page": "39098fb4fc23470b",
+        "width": 12,
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "8adbdc11244a48e4",
+        "type": "ui-group",
+        "name": "Latest Calls",
+        "page": "9ec4eaf4dc4b42f3",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "adc4cf3956a346d4",
+        "type": "ui-group",
+        "name": "Raw Data",
+        "page": "9ec4eaf4dc4b42f3",
+        "width": 12,
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b17c97d65ff746b3",
+        "type": "ui-group",
+        "name": "Missing Fields",
+        "page": "c234966c983c48c6",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2cb532e469aa4faf",
+        "type": "ui-group",
+        "name": "Signals",
+        "page": "c234966c983c48c6",
+        "width": 12,
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "019fad2b7d2e98b2",
+        "type": "file in",
+        "z": "b947d8abbaee7b36",
+        "name": "Home_FA_Outbound",
+        "filename": "/Users/jarhodes/Library/CloudStorage/OneDrive-GenesysTelecommunicationsLaboratories,Inc/Documents/Genesys Clients/Quinnstreet/AnalysisTools/Home_FA_Outbound/conversation_timings.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 400,
+        "y": 280,
+        "wires": [
+            [
+                "7da34d23d588052f"
+            ]
+        ]
+    },
+    {
+        "id": "7da34d23d588052f",
+        "type": "csv",
+        "z": "b947d8abbaee7b36",
+        "name": "conversation Data",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 690,
+        "y": 280,
+        "wires": [
+            [
+                "6ca85e0cd85da65f"
+            ]
+        ]
+    },
+    {
+        "id": "d44164fd81b463c2",
+        "type": "inject",
+        "z": "b947d8abbaee7b36",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 280,
+        "wires": [
+            [
+                "019fad2b7d2e98b2"
+            ]
+        ]
+    },
+    {
+        "id": "c903d3b172cf7d8b",
+        "type": "debug",
+        "z": "b947d8abbaee7b36",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "6ca85e0cd85da65f",
+        "type": "function",
+        "z": "b947d8abbaee7b36",
+        "name": "Normalize (GPT)",
+        "func": "const p = msg.payload || {};\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction getDate(v) {\n    if (!v) return null;\n    const d = new Date(v);\n    return isNaN(d.getTime()) ? null : d;\n}\n\n// start from the full original row so nothing is lost\nconst row = { ...p };\n\nconst start = getDate(p.conversation_start);\nconst delaySeconds =\n    num(p.customer_to_agent_seconds) ??\n    num(p.dominant_latency_seconds) ??\n    num(p.alert_to_agent_seconds) ??\n    num(p.dial_to_customer_seconds);\n\nlet delayBand = null;\nif (delaySeconds !== null) {\n    if (delaySeconds < 5) delayBand = \"0-5\";\n    else if (delaySeconds < 10) delayBand = \"5-10\";\n    else if (delaySeconds < 20) delayBand = \"10-20\";\n    else delayBand = \"20+\";\n}\n\n// add derived fields, but keep everything else\nrow.delay_seconds = delaySeconds;\nrow.delay_band = delayBand;\nrow.hour = start ? start.getHours() : null;\nrow.weekday = start ? start.toLocaleDateString(\"en-US\", { weekday: \"short\" }) : null;\nrow.date = start ? start.toISOString().slice(0, 10) : null;\n\n// optional normalization for blank strings on key fields\nrow.disposition_name = clean(row.disposition_name);\nrow.disposition_analyzer = clean(row.disposition_analyzer);\n\nmsg.payload = row;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 420,
+        "wires": [
+            [
+                "83654361f9289a29"
+            ]
+        ]
+    },
+    {
+        "id": "83654361f9289a29",
+        "type": "join",
+        "z": "b947d8abbaee7b36",
+        "name": "Data Join",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 880,
+        "y": 420,
+        "wires": [
+            [
+                "816b47c26d92c2c9"
+            ]
+        ]
+    },
+    {
+        "id": "816b47c26d92c2c9",
+        "type": "function",
+        "z": "b947d8abbaee7b36",
+        "name": "Store Data (GPT)",
+        "func": "global.set(\"conversations\", msg.payload);\nmsg.payload = { rowCount: msg.payload.length };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 420,
+        "wires": [
+            [
+                "c903d3b172cf7d8b"
+            ]
+        ]
+    },
+    {
+        "id": "cd5a3b7f22d44e3d",
+        "type": "ui-text",
+        "z": "08295287843d4686",
+        "group": "c5481991f6af4ecd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Interactions Evaluated",
+        "label": "Interactions Evaluated",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 120,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "520e2dd725304a03",
+        "type": "ui-text",
+        "z": "08295287843d4686",
+        "group": "c5481991f6af4ecd",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Average Customer→Agent",
+        "label": "Average Customer→Agent",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 360,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b30373e2e72946af",
+        "type": "ui-text",
+        "z": "08295287843d4686",
+        "group": "c5481991f6af4ecd",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Average Customer→Speech",
+        "label": "Average Customer→Speech",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 600,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "8182c1d9edca44b3",
+        "type": "ui-text",
+        "z": "08295287843d4686",
+        "group": "c5481991f6af4ecd",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Average Conversation Duration",
+        "label": "Average Conversation Duration",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 840,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "0de514969c544d54",
+        "type": "ui-text",
+        "z": "08295287843d4686",
+        "group": "c5481991f6af4ecd",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "P95 Customer→Agent",
+        "label": "P95 Customer→Agent",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1080,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "958c600e551946aa",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Interactions Count",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nmsg.payload = conversations.length;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "cd5a3b7f22d44e3d"
+            ]
+        ]
+    },
+    {
+        "id": "1be1334b268841b3",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Avg Customer to Agent",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst vals = conversations.map(r => num(r.customer_to_agent_seconds)).filter(v => v !== null);\nmsg.payload = vals.length ? Number((vals.reduce((a, b) => a + b, 0) / vals.length).toFixed(3)) : null;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 80,
+        "wires": [
+            [
+                "520e2dd725304a03"
+            ]
+        ]
+    },
+    {
+        "id": "064f36f129714f5f",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Avg Customer to Speech",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst vals = conversations.map(r => num(r.customer_to_speech_seconds)).filter(v => v !== null);\nmsg.payload = vals.length ? Number((vals.reduce((a, b) => a + b, 0) / vals.length).toFixed(3)) : null;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 80,
+        "wires": [
+            [
+                "b30373e2e72946af"
+            ]
+        ]
+    },
+    {
+        "id": "b104596097de4b1d",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Avg Conversation Duration",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst vals = conversations.map(r => num(r.conversation_duration_seconds)).filter(v => v !== null);\nmsg.payload = vals.length ? Number((vals.reduce((a, b) => a + b, 0) / vals.length).toFixed(3)) : null;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 80,
+        "wires": [
+            [
+                "8182c1d9edca44b3"
+            ]
+        ]
+    },
+    {
+        "id": "9959385d498842e0",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "P95 Customer to Agent",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst vals = conversations.map(r => num(r.customer_to_agent_seconds)).filter(v => v !== null);\nmsg.payload = vals.length ? Number(percentile(vals, 95).toFixed(3)) : null;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 80,
+        "wires": [
+            [
+                "0de514969c544d54"
+            ]
+        ]
+    },
+    {
+        "id": "d7f6c4bc00334c9d",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Disposition Summary",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst total = conversations.length;\nconst stats = {};\nfor (const row of conversations) {\n    const key = clean(row.disposition_analyzer) || clean(row.disposition_name) || \"Unknown\";\n    if (!stats[key]) {\n        stats[key] = { disposition_analyzer: key, count: 0, totalCustomerToSpeech: 0, speechCount: 0, totalCustomerToAgent: 0, agentCount: 0 };\n    }\n    stats[key].count++;\n    const s = num(row.customer_to_speech_seconds);\n    if (s !== null) { stats[key].totalCustomerToSpeech += s; stats[key].speechCount++; }\n    const a = num(row.customer_to_agent_seconds);\n    if (a !== null) { stats[key].totalCustomerToAgent += a; stats[key].agentCount++; }\n}\nmsg.payload = Object.values(stats).map(r => ({\n    disposition_analyzer: r.disposition_analyzer,\n    count: r.count,\n    percent_total: Number(((r.count / total) * 100).toFixed(2)),\n    avg_customer_to_speech_seconds: r.speechCount ? Number((r.totalCustomerToSpeech / r.speechCount).toFixed(3)) : null,\n    avg_customer_to_agent_seconds: r.agentCount ? Number((r.totalCustomerToAgent / r.agentCount).toFixed(3)) : null,\n})).sort((a, b) => b.count - a.count);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 260,
+        "wires": [
+            [
+                "905835ef6e36425a"
+            ]
+        ]
+    },
+    {
+        "id": "905835ef6e36425a",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "e372846a44524261",
+        "name": "Disposition Summary Table",
+        "label": "Disposition Summary",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "25",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7dd380bb708415b",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Latency Summary",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst stats = {};\nfor (const row of conversations) {\n    const key = clean(row.disposition_analyzer) || clean(row.disposition_name) || \"Unknown\";\n    const value = num(row.customer_to_agent_seconds);\n    if (!stats[key]) {\n        stats[key] = { disposition_analyzer: key, count: 0, values: [] };\n    }\n    stats[key].count++;\n    if (value !== null) stats[key].values.push(value);\n}\nmsg.payload = Object.values(stats).map(r => {\n    const values = r.values;\n    return {\n        disposition_analyzer: r.disposition_analyzer,\n        count: r.count,\n        sample_count: values.length,\n        min_customer_to_agent_seconds: values.length ? Number(Math.min(...values).toFixed(3)) : null,\n        avg_customer_to_agent_seconds: values.length ? Number((values.reduce((a, b) => a + b, 0) / values.length).toFixed(3)) : null,\n        p95_customer_to_agent_seconds: values.length ? Number(percentile(values, 95).toFixed(3)) : null,\n        max_customer_to_agent_seconds: values.length ? Number(Math.max(...values).toFixed(3)) : null,\n    };\n}).sort((a, b) => b.count - a.count);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 320,
+        "wires": [
+            [
+                "a59380108069483b"
+            ]
+        ]
+    },
+    {
+        "id": "a59380108069483b",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "30202612dbe14ccd",
+        "name": "Latency Summary Table",
+        "label": "Latency Summary",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "25",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9cb0d8d6efe9490b",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Slowest Calls",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nmsg.payload = conversations.slice().sort((a, b) => (num(b.customer_to_agent_seconds) || 0) - (num(a.customer_to_agent_seconds) || 0)).slice(0, 50).map(r => ({\n    conversation_id: clean(r.conversation_id),\n    conversation_start: clean(r.conversation_start),\n    disposition_analyzer: clean(r.disposition_analyzer) || clean(r.disposition_name) || \"Unknown\",\n    customer_to_agent_seconds: num(r.customer_to_agent_seconds),\n    customer_to_speech_seconds: num(r.customer_to_speech_seconds),\n    dominant_latency_stage: clean(r.dominant_latency_stage),\n    dominant_latency_seconds: num(r.dominant_latency_seconds),\n    delay_band: clean(r.delay_band),\n    has_conference: clean(r.has_conference),\n    notes: clean(r.notes)\n}));\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 460,
+        "wires": [
+            [
+                "9cf753a642d44680"
+            ]
+        ]
+    },
+    {
+        "id": "9cf753a642d44680",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "808456afcd4a499c",
+        "name": "Slowest Calls Table",
+        "label": "Slowest Calls",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "50",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32f72df1d1f442bf",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Delay Bands",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst order = [\"0-5\", \"5-10\", \"10-20\", \"20+\"];\nconst bands = {};\nfor (const row of conversations) {\n    const key = clean(row.delay_band) || \"Unknown\";\n    if (!bands[key]) bands[key] = { delay_band: key, count: 0, total: 0, values: [] };\n    bands[key].count++;\n    const v = num(row.customer_to_agent_seconds);\n    if (v !== null) { bands[key].total += v; bands[key].values.push(v); }\n}\nconst out = Object.values(bands).map(r => ({\n    delay_band: r.delay_band,\n    count: r.count,\n    avg_customer_to_agent_seconds: r.values.length ? Number((r.total / r.values.length).toFixed(3)) : null,\n    p95_customer_to_agent_seconds: r.values.length ? Number(percentile(r.values, 95).toFixed(3)) : null,\n}));\nout.sort((a, b) => {\n    const ai = order.indexOf(a.delay_band);\n    const bi = order.indexOf(b.delay_band);\n    if (ai === -1 && bi === -1) return b.count - a.count;\n    if (ai === -1) return 1;\n    if (bi === -1) return -1;\n    return ai - bi;\n});\nmsg.payload = out;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 520,
+        "wires": [
+            [
+                "faf753e8d02b4401"
+            ]
+        ]
+    },
+    {
+        "id": "faf753e8d02b4401",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "702cf7f178ab43bc",
+        "name": "Delay Bands Table",
+        "label": "Delay Bands",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "25",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5007e03f11b5451e",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Latency Outliers",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nmsg.payload = conversations.slice().sort((a, b) => (num(b.dominant_latency_seconds) || 0) - (num(a.dominant_latency_seconds) || 0)).slice(0, 50).map(r => ({\n    conversation_id: clean(r.conversation_id),\n    conversation_start: clean(r.conversation_start),\n    conversation_duration_seconds: num(r.conversation_duration_seconds),\n    customer_to_agent_seconds: num(r.customer_to_agent_seconds),\n    dominant_latency_stage: clean(r.dominant_latency_stage),\n    dominant_latency_seconds: num(r.dominant_latency_seconds),\n    disposition_analyzer: clean(r.disposition_analyzer) || clean(r.disposition_name) || \"Unknown\",\n    hour: num(r.hour),\n    weekday: clean(r.weekday),\n}));\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 580,
+        "wires": [
+            [
+                "f151e3a175fd48ff"
+            ]
+        ]
+    },
+    {
+        "id": "f151e3a175fd48ff",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "6b9287a0ef984eff",
+        "name": "Latency Outliers Table",
+        "label": "Outliers",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "50",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40595391768c4395",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Stage Summary",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst stages = {};\nfor (const row of conversations) {\n    const key = clean(row.dominant_latency_stage) || \"Unknown\";\n    if (!stages[key]) {\n        stages[key] = { dominant_latency_stage: key, count: 0, totalDominant: 0, dominantCount: 0, totalCustomerToAgent: 0, agentCount: 0, values: [] };\n    }\n    stages[key].count++;\n    const d = num(row.dominant_latency_seconds);\n    if (d !== null) { stages[key].totalDominant += d; stages[key].dominantCount++; }\n    const a = num(row.customer_to_agent_seconds);\n    if (a !== null) { stages[key].totalCustomerToAgent += a; stages[key].agentCount++; stages[key].values.push(a); }\n}\nmsg.payload = Object.values(stages).map(r => ({\n    dominant_latency_stage: r.dominant_latency_stage,\n    count: r.count,\n    avg_dominant_latency_seconds: r.dominantCount ? Number((r.totalDominant / r.dominantCount).toFixed(3)) : null,\n    avg_customer_to_agent_seconds: r.agentCount ? Number((r.totalCustomerToAgent / r.agentCount).toFixed(3)) : null,\n    p95_customer_to_agent_seconds: r.agentCount ? Number(percentile(r.values, 95).toFixed(3)) : null,\n})).sort((a, b) => b.count - a.count);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 700,
+        "wires": [
+            [
+                "2e4c273978ae4456"
+            ]
+        ]
+    },
+    {
+        "id": "2e4c273978ae4456",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "6a4deb54ccb74d50",
+        "name": "Stage Summary Table",
+        "label": "Stage Summary",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "25",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8eb2698ae2ff4081",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Source Summary",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst sourceFields = [\n    \"customer_connected_source\",\n    \"speech_detected_source\",\n    \"ivr_start_source\",\n    \"acd_offer_source\",\n    \"agent_alert_source\",\n    \"agent_connected_source\",\n    \"dial_start_source\"\n];\nconst counts = {};\nfor (const row of conversations) {\n    for (const field of sourceFields) {\n        const key = clean(row[field]) || \"Unknown\";\n        if (!counts[field]) counts[field] = {};\n        counts[field][key] = (counts[field][key] || 0) + 1;\n    }\n}\nconst rows = [];\nfor (const field of sourceFields) {\n    const bucket = counts[field] || {};\n    for (const [source, count] of Object.entries(bucket)) {\n        rows.push({ field, source, count });\n    }\n}\nmsg.payload = rows.sort((a, b) => a.field.localeCompare(b.field) || b.count - a.count);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 760,
+        "wires": [
+            [
+                "5d644fd0164448d8"
+            ]
+        ]
+    },
+    {
+        "id": "5d644fd0164448d8",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "ea6d0575c607488f",
+        "name": "Source Summary Table",
+        "label": "Source Summary",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "50",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c1faa54879c46cf",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Hourly Summary",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst rows = {};\nfor (const row of conversations) {\n    const start = row.conversation_start ? new Date(row.conversation_start) : null;\n    const hour = start && !isNaN(start.getTime()) ? start.getHours() : null;\n    const key = hour === null ? \"Unknown\" : String(hour).padStart(2, \"0\");\n    if (!rows[key]) rows[key] = { hour: key, count: 0, totalAgent: 0, agentCount: 0, totalDom: 0, domCount: 0 };\n    rows[key].count++;\n    const a = num(row.customer_to_agent_seconds);\n    if (a !== null) { rows[key].totalAgent += a; rows[key].agentCount++; }\n    const d = num(row.dominant_latency_seconds);\n    if (d !== null) { rows[key].totalDom += d; rows[key].domCount++; }\n}\nmsg.payload = Object.values(rows).sort((a, b) => a.hour.localeCompare(b.hour)).map(r => ({\n    hour: r.hour,\n    count: r.count,\n    avg_customer_to_agent_seconds: r.agentCount ? Number((r.totalAgent / r.agentCount).toFixed(3)) : null,\n    avg_dominant_latency_seconds: r.domCount ? Number((r.totalDom / r.domCount).toFixed(3)) : null,\n}));\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 900,
+        "wires": [
+            [
+                "625a98a6d67d475a"
+            ]
+        ]
+    },
+    {
+        "id": "625a98a6d67d475a",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "32416563412a4627",
+        "name": "Hourly Table",
+        "label": "Hourly",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "25",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c010ff67c58644ea",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Weekday Summary",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst order = [\"Mon\", \"Tue\", \"Wed\", \"Thu\", \"Fri\", \"Sat\", \"Sun\"];\nconst rows = {};\nfor (const row of conversations) {\n    const start = row.conversation_start ? new Date(row.conversation_start) : null;\n    const key = start && !isNaN(start.getTime()) ? start.toLocaleDateString(\"en-US\", { weekday: \"short\" }) : \"Unknown\";\n    if (!rows[key]) rows[key] = { weekday: key, count: 0, totalAgent: 0, agentCount: 0 };\n    rows[key].count++;\n    const a = num(row.customer_to_agent_seconds);\n    if (a !== null) { rows[key].totalAgent += a; rows[key].agentCount++; }\n}\nmsg.payload = Object.values(rows).sort((a, b) => {\n    const ai = order.indexOf(a.weekday);\n    const bi = order.indexOf(b.weekday);\n    if (ai === -1 && bi === -1) return a.weekday.localeCompare(b.weekday);\n    if (ai === -1) return 1;\n    if (bi === -1) return -1;\n    return ai - bi;\n}).map(r => ({\n    weekday: r.weekday,\n    count: r.count,\n    avg_customer_to_agent_seconds: r.agentCount ? Number((r.totalAgent / r.agentCount).toFixed(3)) : null,\n}));\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 960,
+        "wires": [
+            [
+                "d76c43024dfc4aea"
+            ]
+        ]
+    },
+    {
+        "id": "d76c43024dfc4aea",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "fcb0ba83b7e64f5e",
+        "name": "Weekday Table",
+        "label": "Weekday",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "25",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef84ad8ef6af471d",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Date Trend",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst rows = {};\nfor (const row of conversations) {\n    const key = clean(row.date) || (row.conversation_start ? String(row.conversation_start).slice(0, 10) : \"Unknown\");\n    if (!rows[key]) rows[key] = { date: key, count: 0, totalAgent: 0, agentCount: 0 };\n    rows[key].count++;\n    const a = num(row.customer_to_agent_seconds);\n    if (a !== null) { rows[key].totalAgent += a; rows[key].agentCount++; }\n}\nmsg.payload = Object.values(rows).sort((a, b) => a.date.localeCompare(b.date)).map(r => ({\n    date: r.date,\n    count: r.count,\n    avg_customer_to_agent_seconds: r.agentCount ? Number((r.totalAgent / r.agentCount).toFixed(3)) : null,\n}));\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 1020,
+        "wires": [
+            [
+                "b710cb07814b4f85"
+            ]
+        ]
+    },
+    {
+        "id": "b710cb07814b4f85",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "1596bd27f68e4671",
+        "name": "Date Trend Table",
+        "label": "Date Trend",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "50",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6044dbdcd70d4d30",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Root Cause Stage Summary",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst rows = {};\nfor (const row of conversations) {\n    const key = clean(row.dominant_latency_stage) || \"Unknown\";\n    if (!rows[key]) rows[key] = { dominant_latency_stage: key, count: 0, domValues: [], agentValues: [] };\n    rows[key].count++;\n    const d = num(row.dominant_latency_seconds);\n    if (d !== null) rows[key].domValues.push(d);\n    const a = num(row.customer_to_agent_seconds);\n    if (a !== null) rows[key].agentValues.push(a);\n}\nmsg.payload = Object.values(rows).map(r => ({\n    dominant_latency_stage: r.dominant_latency_stage,\n    count: r.count,\n    avg_dominant_latency_seconds: r.domValues.length ? Number((r.domValues.reduce((a, b) => a + b, 0) / r.domValues.length).toFixed(3)) : null,\n    p95_dominant_latency_seconds: r.domValues.length ? Number(percentile(r.domValues, 95).toFixed(3)) : null,\n    max_dominant_latency_seconds: r.domValues.length ? Number(Math.max(...r.domValues).toFixed(3)) : null,\n    avg_customer_to_agent_seconds: r.agentValues.length ? Number((r.agentValues.reduce((a, b) => a + b, 0) / r.agentValues.length).toFixed(3)) : null,\n})).sort((a, b) => b.count - a.count);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 1160,
+        "wires": [
+            [
+                "34705ae585ce4ef3"
+            ]
+        ]
+    },
+    {
+        "id": "34705ae585ce4ef3",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "4e644d6d4cc546b4",
+        "name": "Root Cause Stage Table",
+        "label": "Root Cause",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "25",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49d8a21cb4ee4576",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Root Cause Worst Calls",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nmsg.payload = conversations.slice().sort((a, b) => (num(b.dominant_latency_seconds) || 0) - (num(a.dominant_latency_seconds) || 0)).slice(0, 50).map(r => ({\n    conversation_id: clean(r.conversation_id),\n    conversation_start: clean(r.conversation_start),\n    dominant_latency_stage: clean(r.dominant_latency_stage),\n    dominant_latency_seconds: num(r.dominant_latency_seconds),\n    customer_to_agent_seconds: num(r.customer_to_agent_seconds),\n    disposition_analyzer: clean(r.disposition_analyzer) || clean(r.disposition_name) || \"Unknown\",\n    notes: clean(r.notes),\n}));\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 1220,
+        "wires": [
+            [
+                "5fd8ce6003c646cf"
+            ]
+        ]
+    },
+    {
+        "id": "5fd8ce6003c646cf",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "4e19e8a73aff49d4",
+        "name": "Root Cause Worst Calls Table",
+        "label": "Worst Calls",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "50",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "425045cc1cd44129",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Explorer Latest",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nmsg.payload = conversations.slice().sort((a, b) => {\n    const ad = a.conversation_start ? new Date(a.conversation_start).getTime() : 0;\n    const bd = b.conversation_start ? new Date(b.conversation_start).getTime() : 0;\n    return bd - ad;\n}).slice(0, 25).map(r => ({ ...r }));\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 1360,
+        "wires": [
+            [
+                "b440563960934037"
+            ]
+        ]
+    },
+    {
+        "id": "b440563960934037",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "8adbdc11244a48e4",
+        "name": "Explorer Latest Table",
+        "label": "Latest Calls",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "25",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4e37cc32c429419a",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Explorer Raw",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nmsg.payload = conversations.slice().sort((a, b) => (a.conversation_id || \"\").localeCompare(b.conversation_id || \"\")).slice(0, 25).map(r => ({\n    conversation_id: clean(r.conversation_id),\n    conversation_start: clean(r.conversation_start),\n    conversation_end: clean(r.conversation_end),\n    conversation_duration_seconds: num(r.conversation_duration_seconds),\n    customer_to_agent_seconds: num(r.customer_to_agent_seconds),\n    customer_to_speech_seconds: num(r.customer_to_speech_seconds),\n    disposition_analyzer: clean(r.disposition_analyzer) || clean(r.disposition_name) || \"Unknown\",\n    dominant_latency_stage: clean(r.dominant_latency_stage),\n    dominant_latency_seconds: num(r.dominant_latency_seconds),\n    has_conference: clean(r.has_conference),\n    notes: clean(r.notes),\n}));\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 1420,
+        "wires": [
+            [
+                "65d61c073eb847f1"
+            ]
+        ]
+    },
+    {
+        "id": "65d61c073eb847f1",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "adc4cf3956a346d4",
+        "name": "Explorer Raw Table",
+        "label": "Raw Data",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "25",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ecaa4dc0548b4374",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Missing Fields",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst fields = [\n    \"customer_connected_time\",\n    \"speech_detected_start\",\n    \"speech_detected_end\",\n    \"ivr_start_time\",\n    \"acd_offer_time\",\n    \"agent_alert_time\",\n    \"agent_connected_time\",\n    \"disposition_analyzer\",\n    \"dominant_latency_stage\",\n    \"customer_to_speech_seconds\",\n    \"customer_to_agent_seconds\"\n];\nconst total = conversations.length;\nmsg.payload = fields.map(field => {\n    const missing = conversations.filter(r => {\n        const v = r[field];\n        return v === undefined || v === null || v === \"\";\n    }).length;\n    return {\n        field,\n        missing_count: missing,\n        percent_missing: total ? Number(((missing / total) * 100).toFixed(2)) : null,\n    };\n});\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 1560,
+        "wires": [
+            [
+                "7573b0250c924cda"
+            ]
+        ]
+    },
+    {
+        "id": "7573b0250c924cda",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "b17c97d65ff746b3",
+        "name": "Missing Fields Table",
+        "label": "Missing Fields",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "50",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea857e7080004172",
+        "type": "function",
+        "z": "08295287843d4686",
+        "name": "Quality Signals",
+        "func": "\nlet conversations = global.get(\"conversations\");\n\nif (!Array.isArray(conversations) || conversations.length === 0) {\n    node.warn(\"No Conversation Data Loaded\");\n    return null;\n}\n\nfunction num(v) {\n    if (v === undefined || v === null || v === \"\") return null;\n    const n = Number(v);\n    return Number.isFinite(n) ? n : null;\n}\n\nfunction clean(v) {\n    return (v === undefined || v === null || v === \"\") ? null : v;\n}\n\nfunction percentile(values, p) {\n    if (!values.length) return null;\n    const sorted = values.slice().sort((a, b) => a - b);\n    const rank = (p / 100) * (sorted.length - 1);\n    const low = Math.floor(rank);\n    const high = Math.ceil(rank);\n    if (low === high) return sorted[low];\n    const weight = rank - low;\n    return sorted[low] * (1 - weight) + sorted[high] * weight;\n}\n\nconst total = conversations.length;\nconst metrics = [\n    { metric: \"has_conference = true\", count: conversations.filter(r => String(r.has_conference).toLowerCase() === \"true\").length },\n    { metric: \"has_conference = false\", count: conversations.filter(r => String(r.has_conference).toLowerCase() === \"false\").length },\n    { metric: \"missing disposition_analyzer\", count: conversations.filter(r => !clean(r.disposition_analyzer) && !clean(r.disposition_name)).length },\n    { metric: \"missing dominant_latency_stage\", count: conversations.filter(r => !clean(r.dominant_latency_stage)).length },\n    { metric: \"missing customer_to_agent_seconds\", count: conversations.filter(r => num(r.customer_to_agent_seconds) === null).length },\n    { metric: \"missing customer_to_speech_seconds\", count: conversations.filter(r => num(r.customer_to_speech_seconds) === null).length },\n];\nmsg.payload = metrics.map(r => ({\n    metric: r.metric,\n    count: r.count,\n    percent_total: total ? Number(((r.count / total) * 100).toFixed(2)) : null,\n}));\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 1620,
+        "wires": [
+            [
+                "5a18e73c6cd64b6e"
+            ]
+        ]
+    },
+    {
+        "id": "5a18e73c6cd64b6e",
+        "type": "ui-table",
+        "z": "08295287843d4686",
+        "group": "2cb532e469aa4faf",
+        "name": "Quality Signals Table",
+        "label": "Signals",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "50",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 540,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d20a6e03ccba475e",
+        "type": "inject",
+        "z": "08295287843d4686",
+        "name": "Refresh Dashboard",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "958c600e551946aa",
+                "1be1334b268841b3",
+                "064f36f129714f5f",
+                "b104596097de4b1d",
+                "9959385d498842e0",
+                "d7f6c4bc00334c9d",
+                "b7dd380bb708415b",
+                "9cb0d8d6efe9490b",
+                "32f72df1d1f442bf",
+                "5007e03f11b5451e",
+                "40595391768c4395",
+                "8eb2698ae2ff4081",
+                "9c1faa54879c46cf",
+                "c010ff67c58644ea",
+                "ef84ad8ef6af471d",
+                "6044dbdcd70d4d30",
+                "49d8a21cb4ee4576",
+                "425045cc1cd44129",
+                "4e37cc32c429419a",
+                "ecaa4dc0548b4374",
+                "ea857e7080004172"
+            ]
+        ]
+    }
+]
