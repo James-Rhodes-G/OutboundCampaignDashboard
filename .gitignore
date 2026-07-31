@@ -1,1 +1,23 @@
 *.backup
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# Playwright browser cache (run: npx playwright install chromium)
+.playwright-browsers/
+
+# Local / OS
+.DS_Store
+OutboundDashboard_cred.json
+scripts/campaigns.json
+
+# Local exports from chart scripts
+exports/

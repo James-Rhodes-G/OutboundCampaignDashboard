@@ -1,0 +1,11 @@
+{
+    "dataDir": "data/campaigns",
+    "campaigns": [
+        {
+            "id": "EXAMPLE_CAMPAIGN",
+            "name": "Example Campaign",
+            "csv": "EXAMPLE_CAMPAIGN/conversation_timings.csv",
+            "genesys_guid": "00000000-0000-0000-0000-000000000000"
+        }
+    ]
+}

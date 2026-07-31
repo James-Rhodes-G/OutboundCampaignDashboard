@@ -1,12 +1,31 @@
 {
-    "name": "QuinStreet_Complete",
-    "description": "A Node-RED Project",
+    "name": "OutboundDashboard",
+    "description": "Genesys outbound analytics Node-RED Dashboard 2.0 project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-node-sqlite": "^2.0.1"
+    },
+    "devDependencies": {
+        "playwright": "^1.52.0"
+    },
+    "scripts": {
+        "collect:conversations": "bash scripts/collect_all_outbound_campaigns.sh",
+        "sync:campaigns": "python3 scripts/sync_campaigns_config.py",
+        "build:timings": "python3 scripts/build_all_campaign_timings.py --all --skip-missing",
+        "import:campaigns": "python3 scripts/import_campaigns.py --all --skip-missing",
+        "fetch:diagnostics": "python3 scripts/fetch_campaign_diagnostics.py --all --skip-missing",
+        "fetch:whole-agents": "python3 scripts/fetch_campaign_whole_agents.py --all --skip-missing",
+        "import:diagnostics": "python3 scripts/import_campaign_diagnostics.py --all --skip-missing",
+        "recompute:delays": "python3 scripts/import_campaigns.py --recompute-delays",
+        "load:all": "python3 scripts/sync_campaigns_config.py && python3 scripts/build_all_campaign_timings.py --all --skip-missing && python3 scripts/import_campaigns.py --all --skip-missing",
+        "load:all-with-diagnostics": "npm run sync:campaigns && npm run build:timings && npm run import:campaigns && npm run fetch:diagnostics && npm run import:diagnostics",
+        "export:charts": "node scripts/export_campaign_charts.mjs",
+        "export:timeline": "node scripts/export_campaign_charts.mjs --timeline"
+    },
     "node-red": {
         "settings": {
-            "flowFile": "QuinStreet_Complete.json",
-            "credentialsFile": "QuinStreet_Complete_cred.json"
+            "flowFile": "OutboundDashboard.json",
+            "credentialsFile": "OutboundDashboard_cred.json"
         }
     }
 }
