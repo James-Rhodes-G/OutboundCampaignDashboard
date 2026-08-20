@@ -3,6 +3,7 @@
     "description": "Genesys outbound analytics Node-RED Dashboard 2.0 project",
     "version": "0.0.1",
     "dependencies": {
+        "@flowfuse/node-red-dashboard": "^1.30.2",
         "node-red-node-sqlite": "^2.0.1"
     },
     "devDependencies": {

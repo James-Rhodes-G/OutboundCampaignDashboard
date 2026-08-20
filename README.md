@@ -13,13 +13,13 @@ Node-RED Dashboard 2.0 application for analyzing Genesys Cloud outbound campaign
 | Requirement | Notes |
 |-------------|-------|
 | **Node-RED** | With Dashboard 2.0 (`@flowfuse/node-red-dashboard`) |
-| **Node.js / npm** | For project dependencies |
+| **Node.js / npm** | For project dependencies — run `npm install` in the project folder before starting Node-RED |
 | **Python 3** | For data import scripts |
 | **Data directory** | Campaign CSV and `conversations.jsonl` per campaign (see [Data pipeline](#data-pipeline)) |
 | **curl / jq** | Required for Genesys conversation export scripts |
 | **Playwright** (optional) | Only for bulk PNG export — install browsers after `npm install` |
 
-Install Node-RED dependencies from the project root:
+Install Node-RED dependencies from the project root (installs Dashboard 2.0 and SQLite nodes into the project):
 
 ```bash
 npm install
